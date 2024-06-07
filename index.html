@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <title>TODO: Note down</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>TODO</h1>
+      <form id="itemEntryForm" class="input-wrapper">
+        <input
+          class="input width-fill"
+          type="text"
+          id="input"
+          placeholder="What needs to be done?"
+        />
+        <button id="addbtn" type="submit" aria-label="To add list">Add</button>
+      </form>
+      <div class="todo-list-wrapper">
+        <div class="title-div">
+          <p class="title">Todo list</p>
+          <button
+            type="button"
+            id="clear-btn"
+            title="Clear all lists"
+            aria-label="Remove all items from the lists"
+          >
+            Clear
+          </button>
+        </div>
+        <!-- List wise -->
+        <div class="list-div">
+          <ul class="lists" id="lists"></ul>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
